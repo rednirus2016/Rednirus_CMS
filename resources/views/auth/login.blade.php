@@ -60,19 +60,19 @@
               <!-- Logo -->
               <div class="app-brand justify-content-center">
                 <a href="index.html" class="app-brand-link gap-2">
-                  <span class="app-brand-logo demo">
+                  {{-- <span class="app-brand-logo demo">
                     <image src="{{ asset("assets/img/logo.jpg")}}" width=25>
-                  </span>
-                  
-                  <span class="app-brand-text demo text-body fw-bolder">LMS</span>
+                  </span> --}}
+
+                  <span class="app-brand-text demo text-body fw-bolder">CMS</span>
                 </a>
               </div>
               <!-- /Logo -->
-              <h4 class="mb-2">Welcome to LMS! 👋</h4>
+              <h4 class="mb-2">Welcome to CMS! 👋</h4>
               <p class="mb-4">Please sign-in to your account and start the adventure</p>
               <p></p>
               <form id="formAuthentication" class="mb-3" action="" method="POST">
-                @csrf  
+                @csrf
                 <div class="mb-3">
                   <label for="email" class="form-label">Email or Username</label>
                   <input
@@ -87,9 +87,9 @@
                 <div class="mb-3 form-password-toggle">
                   <div class="d-flex justify-content-between">
                     <label class="form-label" for="password">Password</label>
-                    <a href="auth-forgot-password-basic.html">
+                    {{-- <a href="auth-forgot-password-basic.html">
                       <small>Forgot Password?</small>
-                    </a>
+                    </a> --}}
                   </div>
                   <div class="input-group input-group-merge">
                     <input
@@ -116,7 +116,7 @@
 
               <p class="text-center">
                 <span>New on our platform?</span>
-                <a href="auth-register-basic.html">
+                <a href="{{ url('/register') }}">
                   <span>Create an account</span>
                 </a>
               </p>
